@@ -1,0 +1,4 @@
+useDynLib(BayesCircIsotropy)
+importFrom(Rcpp, evalCpp)
+importFrom(dplyr, '%>%')
+exportPattern("^[[:alpha:]]+")

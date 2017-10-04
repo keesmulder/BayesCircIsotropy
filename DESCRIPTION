@@ -1,0 +1,14 @@
+Package: BayesCircIsotropy
+Type: Package
+Title: Bayesian Tests of Circular Isotropy
+Version: 0.0.0.9000
+Authors@R: person("Kees", "Mulder", email = "keestimmulder@gmail.com", role = c("aut", "cre"))
+Description: This package performs Bayesian tests of circular isotropy, that is,
+    uniformity on the circle.
+License: Some GNU License
+LazyData: TRUE
+Imports: circular, digest, dplyr, ggplot2, pbapply, Rcpp, BH, cubature
+RoxygenNote: 5.0.1
+LinkingTo: Rcpp, BH, RcppArmadillo
+
+
