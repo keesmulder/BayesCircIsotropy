@@ -1,10 +1,8 @@
 #' BayesCircIsotropy: A package for circular isotropy.
 #'
-#' @section MySec fun:
-#' yo yo yo
 #'
 #' @docType package
-#' @name BCI
+#' @name BayesCircIsotropy
 NULL
 
 
