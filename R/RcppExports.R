@@ -2,90 +2,90 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 cvariance <- function(x) {
-    .Call('BayesCircIsotropy_cvariance', PACKAGE = 'BayesCircIsotropy', x)
+    .Call('_BayesCircIsotropy_cvariance', PACKAGE = 'BayesCircIsotropy', x)
 }
 
 atanLF <- function(x, r) {
-    .Call('BayesCircIsotropy_atanLF', PACKAGE = 'BayesCircIsotropy', x, r)
+    .Call('_BayesCircIsotropy_atanLF', PACKAGE = 'BayesCircIsotropy', x, r)
 }
 
 atanLFdouble <- function(x, r) {
-    .Call('BayesCircIsotropy_atanLFdouble', PACKAGE = 'BayesCircIsotropy', x, r)
+    .Call('_BayesCircIsotropy_atanLFdouble', PACKAGE = 'BayesCircIsotropy', x, r)
 }
 
 invAtanLF <- function(x, r) {
-    .Call('BayesCircIsotropy_invAtanLF', PACKAGE = 'BayesCircIsotropy', x, r)
+    .Call('_BayesCircIsotropy_invAtanLF', PACKAGE = 'BayesCircIsotropy', x, r)
 }
 
 invAtanLFdouble <- function(x, r) {
-    .Call('BayesCircIsotropy_invAtanLFdouble', PACKAGE = 'BayesCircIsotropy', x, r)
+    .Call('_BayesCircIsotropy_invAtanLFdouble', PACKAGE = 'BayesCircIsotropy', x, r)
 }
 
 rvmc <- function(n, mu, kp) {
-    .Call('BayesCircIsotropy_rvmc', PACKAGE = 'BayesCircIsotropy', n, mu, kp)
+    .Call('_BayesCircIsotropy_rvmc', PACKAGE = 'BayesCircIsotropy', n, mu, kp)
 }
 
 Wapprox <- function(t) {
-    .Call('BayesCircIsotropy_Wapprox', PACKAGE = 'BayesCircIsotropy', t)
+    .Call('_BayesCircIsotropy_Wapprox', PACKAGE = 'BayesCircIsotropy', t)
 }
 
 sampleKappa <- function(etag, eta) {
-    .Call('BayesCircIsotropy_sampleKappa', PACKAGE = 'BayesCircIsotropy', etag, eta)
+    .Call('_BayesCircIsotropy_sampleKappa', PACKAGE = 'BayesCircIsotropy', etag, eta)
 }
 
 computeMeanDirection <- function(th) {
-    .Call('BayesCircIsotropy_computeMeanDirection', PACKAGE = 'BayesCircIsotropy', th)
+    .Call('_BayesCircIsotropy_computeMeanDirection', PACKAGE = 'BayesCircIsotropy', th)
 }
 
 computeResultantLength <- function(th) {
-    .Call('BayesCircIsotropy_computeResultantLength', PACKAGE = 'BayesCircIsotropy', th)
+    .Call('_BayesCircIsotropy_computeResultantLength', PACKAGE = 'BayesCircIsotropy', th)
 }
 
 quantilec <- function(x, q) {
-    .Call('BayesCircIsotropy_quantilec', PACKAGE = 'BayesCircIsotropy', x, q)
+    .Call('_BayesCircIsotropy_quantilec', PACKAGE = 'BayesCircIsotropy', x, q)
 }
 
 circQuantile <- function(th, q) {
-    .Call('BayesCircIsotropy_circQuantile', PACKAGE = 'BayesCircIsotropy', th, q)
+    .Call('_BayesCircIsotropy_circQuantile', PACKAGE = 'BayesCircIsotropy', th, q)
 }
 
 estimateMode <- function(x, cip) {
-    .Call('BayesCircIsotropy_estimateMode', PACKAGE = 'BayesCircIsotropy', x, cip)
+    .Call('_BayesCircIsotropy_estimateMode', PACKAGE = 'BayesCircIsotropy', x, cip)
 }
 
 computeHDI <- function(x, cip) {
-    .Call('BayesCircIsotropy_computeHDI', PACKAGE = 'BayesCircIsotropy', x, cip)
+    .Call('_BayesCircIsotropy_computeHDI', PACKAGE = 'BayesCircIsotropy', x, cip)
 }
 
 estimateDensity <- function(x, x_0, cip) {
-    .Call('BayesCircIsotropy_estimateDensity', PACKAGE = 'BayesCircIsotropy', x, x_0, cip)
+    .Call('_BayesCircIsotropy_estimateDensity', PACKAGE = 'BayesCircIsotropy', x, x_0, cip)
 }
 
 rhsll <- function(b0, kp, bt, dt, th, X, D, r) {
-    .Call('BayesCircIsotropy_rhsll', PACKAGE = 'BayesCircIsotropy', b0, kp, bt, dt, th, X, D, r)
+    .Call('_BayesCircIsotropy_rhsll', PACKAGE = 'BayesCircIsotropy', b0, kp, bt, dt, th, X, D, r)
 }
 
 ll <- function(b0, kp, bt, dt, th, X, D, r) {
-    .Call('BayesCircIsotropy_ll', PACKAGE = 'BayesCircIsotropy', b0, kp, bt, dt, th, X, D, r)
+    .Call('_BayesCircIsotropy_ll', PACKAGE = 'BayesCircIsotropy', b0, kp, bt, dt, th, X, D, r)
 }
 
 logProbNormal <- function(x, mu, sd) {
-    .Call('BayesCircIsotropy_logProbNormal', PACKAGE = 'BayesCircIsotropy', x, mu, sd)
+    .Call('_BayesCircIsotropy_logProbNormal', PACKAGE = 'BayesCircIsotropy', x, mu, sd)
 }
 
 truncCauchyPdf <- function(x, m, w) {
-    .Call('BayesCircIsotropy_truncCauchyPdf', PACKAGE = 'BayesCircIsotropy', x, m, w)
+    .Call('_BayesCircIsotropy_truncCauchyPdf', PACKAGE = 'BayesCircIsotropy', x, m, w)
 }
 
 circGLMC <- function(th, X, D, conj_prior, bt_prior, starting_values, burnin, lag, bwb, kappaModeEstBandwith, CIsize, Q, r, returnPostSample, bt_prior_type, reparametrize, debug, loopDebug, betaMHCorrection, groupMeanComparisons) {
-    .Call('BayesCircIsotropy_circGLMC', PACKAGE = 'BayesCircIsotropy', th, X, D, conj_prior, bt_prior, starting_values, burnin, lag, bwb, kappaModeEstBandwith, CIsize, Q, r, returnPostSample, bt_prior_type, reparametrize, debug, loopDebug, betaMHCorrection, groupMeanComparisons)
+    .Call('_BayesCircIsotropy_circGLMC', PACKAGE = 'BayesCircIsotropy', th, X, D, conj_prior, bt_prior, starting_values, burnin, lag, bwb, kappaModeEstBandwith, CIsize, Q, r, returnPostSample, bt_prior_type, reparametrize, debug, loopDebug, betaMHCorrection, groupMeanComparisons)
 }
 
 hmode <- function(x, cip) {
-    .Call('BayesCircIsotropy_hmode', PACKAGE = 'BayesCircIsotropy', x, cip)
+    .Call('_BayesCircIsotropy_hmode', PACKAGE = 'BayesCircIsotropy', x, cip)
 }
 
 hmodeci <- function(x, cip) {
-    .Call('BayesCircIsotropy_hmodeci', PACKAGE = 'BayesCircIsotropy', x, cip)
+    .Call('_BayesCircIsotropy_hmodeci', PACKAGE = 'BayesCircIsotropy', x, cip)
 }
 

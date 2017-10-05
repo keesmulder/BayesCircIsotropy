@@ -9,7 +9,7 @@ using namespace Rcpp;
 
 // cvariance
 double cvariance(vec x);
-RcppExport SEXP BayesCircIsotropy_cvariance(SEXP xSEXP) {
+RcppExport SEXP _BayesCircIsotropy_cvariance(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -20,7 +20,7 @@ END_RCPP
 }
 // atanLF
 vec atanLF(vec x, double r);
-RcppExport SEXP BayesCircIsotropy_atanLF(SEXP xSEXP, SEXP rSEXP) {
+RcppExport SEXP _BayesCircIsotropy_atanLF(SEXP xSEXP, SEXP rSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -32,7 +32,7 @@ END_RCPP
 }
 // atanLFdouble
 double atanLFdouble(double x, double r);
-RcppExport SEXP BayesCircIsotropy_atanLFdouble(SEXP xSEXP, SEXP rSEXP) {
+RcppExport SEXP _BayesCircIsotropy_atanLFdouble(SEXP xSEXP, SEXP rSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -44,7 +44,7 @@ END_RCPP
 }
 // invAtanLF
 vec invAtanLF(vec x, double r);
-RcppExport SEXP BayesCircIsotropy_invAtanLF(SEXP xSEXP, SEXP rSEXP) {
+RcppExport SEXP _BayesCircIsotropy_invAtanLF(SEXP xSEXP, SEXP rSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -56,7 +56,7 @@ END_RCPP
 }
 // invAtanLFdouble
 double invAtanLFdouble(double x, double r);
-RcppExport SEXP BayesCircIsotropy_invAtanLFdouble(SEXP xSEXP, SEXP rSEXP) {
+RcppExport SEXP _BayesCircIsotropy_invAtanLFdouble(SEXP xSEXP, SEXP rSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -68,7 +68,7 @@ END_RCPP
 }
 // rvmc
 NumericVector rvmc(int n, double mu, double kp);
-RcppExport SEXP BayesCircIsotropy_rvmc(SEXP nSEXP, SEXP muSEXP, SEXP kpSEXP) {
+RcppExport SEXP _BayesCircIsotropy_rvmc(SEXP nSEXP, SEXP muSEXP, SEXP kpSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -81,7 +81,7 @@ END_RCPP
 }
 // Wapprox
 double Wapprox(double t);
-RcppExport SEXP BayesCircIsotropy_Wapprox(SEXP tSEXP) {
+RcppExport SEXP _BayesCircIsotropy_Wapprox(SEXP tSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -92,7 +92,7 @@ END_RCPP
 }
 // sampleKappa
 vec sampleKappa(double etag, int eta);
-RcppExport SEXP BayesCircIsotropy_sampleKappa(SEXP etagSEXP, SEXP etaSEXP) {
+RcppExport SEXP _BayesCircIsotropy_sampleKappa(SEXP etagSEXP, SEXP etaSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -104,7 +104,7 @@ END_RCPP
 }
 // computeMeanDirection
 double computeMeanDirection(vec th);
-RcppExport SEXP BayesCircIsotropy_computeMeanDirection(SEXP thSEXP) {
+RcppExport SEXP _BayesCircIsotropy_computeMeanDirection(SEXP thSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -115,7 +115,7 @@ END_RCPP
 }
 // computeResultantLength
 double computeResultantLength(vec th);
-RcppExport SEXP BayesCircIsotropy_computeResultantLength(SEXP thSEXP) {
+RcppExport SEXP _BayesCircIsotropy_computeResultantLength(SEXP thSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -126,7 +126,7 @@ END_RCPP
 }
 // quantilec
 vec quantilec(vec x, vec q);
-RcppExport SEXP BayesCircIsotropy_quantilec(SEXP xSEXP, SEXP qSEXP) {
+RcppExport SEXP _BayesCircIsotropy_quantilec(SEXP xSEXP, SEXP qSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -138,7 +138,7 @@ END_RCPP
 }
 // circQuantile
 vec circQuantile(arma::vec th, vec q);
-RcppExport SEXP BayesCircIsotropy_circQuantile(SEXP thSEXP, SEXP qSEXP) {
+RcppExport SEXP _BayesCircIsotropy_circQuantile(SEXP thSEXP, SEXP qSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -150,7 +150,7 @@ END_RCPP
 }
 // estimateMode
 double estimateMode(vec x, double cip);
-RcppExport SEXP BayesCircIsotropy_estimateMode(SEXP xSEXP, SEXP cipSEXP) {
+RcppExport SEXP _BayesCircIsotropy_estimateMode(SEXP xSEXP, SEXP cipSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -162,7 +162,7 @@ END_RCPP
 }
 // computeHDI
 vec computeHDI(vec x, double cip);
-RcppExport SEXP BayesCircIsotropy_computeHDI(SEXP xSEXP, SEXP cipSEXP) {
+RcppExport SEXP _BayesCircIsotropy_computeHDI(SEXP xSEXP, SEXP cipSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -174,7 +174,7 @@ END_RCPP
 }
 // estimateDensity
 double estimateDensity(vec x, double x_0, double cip);
-RcppExport SEXP BayesCircIsotropy_estimateDensity(SEXP xSEXP, SEXP x_0SEXP, SEXP cipSEXP) {
+RcppExport SEXP _BayesCircIsotropy_estimateDensity(SEXP xSEXP, SEXP x_0SEXP, SEXP cipSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -187,7 +187,7 @@ END_RCPP
 }
 // rhsll
 double rhsll(double b0, double kp, vec bt, vec dt, vec th, mat X, mat D, double r);
-RcppExport SEXP BayesCircIsotropy_rhsll(SEXP b0SEXP, SEXP kpSEXP, SEXP btSEXP, SEXP dtSEXP, SEXP thSEXP, SEXP XSEXP, SEXP DSEXP, SEXP rSEXP) {
+RcppExport SEXP _BayesCircIsotropy_rhsll(SEXP b0SEXP, SEXP kpSEXP, SEXP btSEXP, SEXP dtSEXP, SEXP thSEXP, SEXP XSEXP, SEXP DSEXP, SEXP rSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -205,7 +205,7 @@ END_RCPP
 }
 // ll
 double ll(double b0, double kp, vec bt, vec dt, vec th, mat X, mat D, double r);
-RcppExport SEXP BayesCircIsotropy_ll(SEXP b0SEXP, SEXP kpSEXP, SEXP btSEXP, SEXP dtSEXP, SEXP thSEXP, SEXP XSEXP, SEXP DSEXP, SEXP rSEXP) {
+RcppExport SEXP _BayesCircIsotropy_ll(SEXP b0SEXP, SEXP kpSEXP, SEXP btSEXP, SEXP dtSEXP, SEXP thSEXP, SEXP XSEXP, SEXP DSEXP, SEXP rSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -223,7 +223,7 @@ END_RCPP
 }
 // logProbNormal
 vec logProbNormal(vec x, vec mu, vec sd);
-RcppExport SEXP BayesCircIsotropy_logProbNormal(SEXP xSEXP, SEXP muSEXP, SEXP sdSEXP) {
+RcppExport SEXP _BayesCircIsotropy_logProbNormal(SEXP xSEXP, SEXP muSEXP, SEXP sdSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -236,7 +236,7 @@ END_RCPP
 }
 // truncCauchyPdf
 double truncCauchyPdf(double x, double m, double w);
-RcppExport SEXP BayesCircIsotropy_truncCauchyPdf(SEXP xSEXP, SEXP mSEXP, SEXP wSEXP) {
+RcppExport SEXP _BayesCircIsotropy_truncCauchyPdf(SEXP xSEXP, SEXP mSEXP, SEXP wSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -249,7 +249,7 @@ END_RCPP
 }
 // circGLMC
 Rcpp::List circGLMC(vec th, mat X, mat D, vec conj_prior, mat bt_prior, vec starting_values, int burnin, int lag, vec bwb, double kappaModeEstBandwith, double CIsize, int Q, double r, bool returnPostSample, int bt_prior_type, bool reparametrize, bool debug, bool loopDebug, bool betaMHCorrection, bool groupMeanComparisons);
-RcppExport SEXP BayesCircIsotropy_circGLMC(SEXP thSEXP, SEXP XSEXP, SEXP DSEXP, SEXP conj_priorSEXP, SEXP bt_priorSEXP, SEXP starting_valuesSEXP, SEXP burninSEXP, SEXP lagSEXP, SEXP bwbSEXP, SEXP kappaModeEstBandwithSEXP, SEXP CIsizeSEXP, SEXP QSEXP, SEXP rSEXP, SEXP returnPostSampleSEXP, SEXP bt_prior_typeSEXP, SEXP reparametrizeSEXP, SEXP debugSEXP, SEXP loopDebugSEXP, SEXP betaMHCorrectionSEXP, SEXP groupMeanComparisonsSEXP) {
+RcppExport SEXP _BayesCircIsotropy_circGLMC(SEXP thSEXP, SEXP XSEXP, SEXP DSEXP, SEXP conj_priorSEXP, SEXP bt_priorSEXP, SEXP starting_valuesSEXP, SEXP burninSEXP, SEXP lagSEXP, SEXP bwbSEXP, SEXP kappaModeEstBandwithSEXP, SEXP CIsizeSEXP, SEXP QSEXP, SEXP rSEXP, SEXP returnPostSampleSEXP, SEXP bt_prior_typeSEXP, SEXP reparametrizeSEXP, SEXP debugSEXP, SEXP loopDebugSEXP, SEXP betaMHCorrectionSEXP, SEXP groupMeanComparisonsSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -279,7 +279,7 @@ END_RCPP
 }
 // hmode
 double hmode(NumericVector x, double cip);
-RcppExport SEXP BayesCircIsotropy_hmode(SEXP xSEXP, SEXP cipSEXP) {
+RcppExport SEXP _BayesCircIsotropy_hmode(SEXP xSEXP, SEXP cipSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -291,7 +291,7 @@ END_RCPP
 }
 // hmodeci
 NumericVector hmodeci(NumericVector x, double cip);
-RcppExport SEXP BayesCircIsotropy_hmodeci(SEXP xSEXP, SEXP cipSEXP) {
+RcppExport SEXP _BayesCircIsotropy_hmodeci(SEXP xSEXP, SEXP cipSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -300,4 +300,35 @@ BEGIN_RCPP
     rcpp_result_gen = Rcpp::wrap(hmodeci(x, cip));
     return rcpp_result_gen;
 END_RCPP
+}
+
+static const R_CallMethodDef CallEntries[] = {
+    {"_BayesCircIsotropy_cvariance", (DL_FUNC) &_BayesCircIsotropy_cvariance, 1},
+    {"_BayesCircIsotropy_atanLF", (DL_FUNC) &_BayesCircIsotropy_atanLF, 2},
+    {"_BayesCircIsotropy_atanLFdouble", (DL_FUNC) &_BayesCircIsotropy_atanLFdouble, 2},
+    {"_BayesCircIsotropy_invAtanLF", (DL_FUNC) &_BayesCircIsotropy_invAtanLF, 2},
+    {"_BayesCircIsotropy_invAtanLFdouble", (DL_FUNC) &_BayesCircIsotropy_invAtanLFdouble, 2},
+    {"_BayesCircIsotropy_rvmc", (DL_FUNC) &_BayesCircIsotropy_rvmc, 3},
+    {"_BayesCircIsotropy_Wapprox", (DL_FUNC) &_BayesCircIsotropy_Wapprox, 1},
+    {"_BayesCircIsotropy_sampleKappa", (DL_FUNC) &_BayesCircIsotropy_sampleKappa, 2},
+    {"_BayesCircIsotropy_computeMeanDirection", (DL_FUNC) &_BayesCircIsotropy_computeMeanDirection, 1},
+    {"_BayesCircIsotropy_computeResultantLength", (DL_FUNC) &_BayesCircIsotropy_computeResultantLength, 1},
+    {"_BayesCircIsotropy_quantilec", (DL_FUNC) &_BayesCircIsotropy_quantilec, 2},
+    {"_BayesCircIsotropy_circQuantile", (DL_FUNC) &_BayesCircIsotropy_circQuantile, 2},
+    {"_BayesCircIsotropy_estimateMode", (DL_FUNC) &_BayesCircIsotropy_estimateMode, 2},
+    {"_BayesCircIsotropy_computeHDI", (DL_FUNC) &_BayesCircIsotropy_computeHDI, 2},
+    {"_BayesCircIsotropy_estimateDensity", (DL_FUNC) &_BayesCircIsotropy_estimateDensity, 3},
+    {"_BayesCircIsotropy_rhsll", (DL_FUNC) &_BayesCircIsotropy_rhsll, 8},
+    {"_BayesCircIsotropy_ll", (DL_FUNC) &_BayesCircIsotropy_ll, 8},
+    {"_BayesCircIsotropy_logProbNormal", (DL_FUNC) &_BayesCircIsotropy_logProbNormal, 3},
+    {"_BayesCircIsotropy_truncCauchyPdf", (DL_FUNC) &_BayesCircIsotropy_truncCauchyPdf, 3},
+    {"_BayesCircIsotropy_circGLMC", (DL_FUNC) &_BayesCircIsotropy_circGLMC, 20},
+    {"_BayesCircIsotropy_hmode", (DL_FUNC) &_BayesCircIsotropy_hmode, 2},
+    {"_BayesCircIsotropy_hmodeci", (DL_FUNC) &_BayesCircIsotropy_hmodeci, 2},
+    {NULL, NULL, 0}
+};
+
+RcppExport void R_init_BayesCircIsotropy(DllInfo *dll) {
+    R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
+    R_useDynamicSymbols(dll, FALSE);
 }
